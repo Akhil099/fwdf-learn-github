@@ -1,0 +1,364 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title> FlipKart Search Result</title>
+        <meta name = "description" content= "Flipkart Search Result" />
+        <meta name = "viewport" content="width=device-width, initial-scale = 1.0" />
+        <style> 
+            #header{
+                width : 100vw;
+                height: 56px;
+                padding-top: 7px; /* Adjust the top position as needed */
+                display: flex;
+                justify-content: center;
+                background-color: #3F72E9;
+            }
+            .img{
+                min-width: 137px;
+                position: relative;
+                top: 0.5vh;
+                /*left: 22.22vw;*/
+                width : 6.16vw;
+                height : 32px;
+                
+                /*justify-content: center;*/
+            }
+            .srch{
+                width: 33vw; /* Adjust the width as needed */
+                height: 4vh; /* Adjust the height as needed */
+                
+                /*left: 425px;*/
+                
+            }
+            .srch-box{
+                width: 100%;
+                height: 100%;
+                box-sizing:border-box;
+            }
+            .txt{
+                padding-top: 0.5vh;
+                width: 7.15vw;
+                color: #FFFFFF;
+            }
+            #bdy{
+                height: 33.5vh;
+                display: flex;
+                flex-direction: row;
+            }
+            .justify-start{
+                margin-left: 40%;
+                margin-top:2%;
+            }
+            .bdy_img{
+                width: 14.17vw;
+                height:7.75vh;
+                padding-top : 0.35vh;
+                padding-left: 2.22vw;
+            }
+            #phn_description{
+                width: 21.04vw;
+                height: 5.94vh;
+                padding-top: 2.35vh;
+                padding-left: 6.06vw;
+                color:black;
+                font-size: 14px;
+                line-height: 16.41px;
+                justify-content: space-between;
+                display:flex;
+                flex-direction: column;
+            }
+            .heading{
+                gap: 1.11%;
+                font-family: sans-serif;
+                font-weight: 700;
+                size: 20px;
+                line-height: 23.44px;
+            }
+            #rating{
+                display:flex;
+                width: 40px;
+                height: 18px;
+                border-radius: 4px;
+                gap: 2px;
+                justify-content: space-between;
+                overflow:hidden;
+            }
+            .phn_txt{
+                width: 303px;
+                height: 96px;
+                margin: 0;
+                padding: 0;
+            }
+            .phn_txt ul{
+                list-style-type: disc;
+                padding-left: 6px;
+            }
+            .phn_txt li{
+                padding:0;
+            }
+            #price{
+                display: flex;
+                flex-direction: column;
+                width: 58.15vw;
+                height:0.33vh;
+                padding-top: 2.35vh;
+                padding-left: 73.81vw;
+                gap: 2px; 
+                font-family: sans-serif;
+            }
+            .price_head{
+                font-size: 24px;
+                font-weight: 700;
+                margin-top: 20px;
+                line-height: 28.13px;
+            }
+            .txt_sml{
+                display: flex;
+                font-size: 12px;
+                justify-content: space-between;
+            }
+            #footer{
+                background-color: #1A2335;
+                height: 31.56vh;
+                display: flex;
+                flex-direction: row;
+            }
+            #about{
+                display: flex;
+                flex-direction: column;
+                font-size: 12px;
+                font-family: sans-serif;
+                align-items: space-between;
+            }
+            .about-sb{
+                margin-top: 50px;
+                padding-left: 5.06vw;
+                padding-right: 2.06vw;
+                width: 120px;
+                height:30px;
+                color:#878787 ;
+            }
+            .about_content{
+                margin-top:5px;
+                padding-left: 5.06vw;
+                padding-right: 2.06vw;
+                color: #FFFFFF;
+                gap:10px;
+                line-height: 14.06px;
+                margin-bottom:2px;
+            }
+            .line {
+               /* box-sizing: border-box;
+                flex: 1 1 150px;
+                max-width: 150px;
+                padding: 16px;
+                height: 65px;
+                background-color: #474D5D;
+                */
+                flex-grow: 8;
+                height: 1px;
+                background-color: #474D5D; /* Change the color as needed */
+                margin: 0 10px; /* Optional: Adjust margin as needed */
+            }
+        </style>
+    </head>
+    <body>
+        <div id = "header" >
+            <div class="img"><img src = "Logo.png"></div>
+            <div class= "srch"><input type="text" class="srch-box" placeholder="Search"></div>
+            <div class= "txt">Become a Seller</div>
+            <div class = "txt">Cart</div>
+            <!-- <span>Become a seller</span>
+            <span> Cart </span> --> 
+            </div>
+        </div>
+        <div id = "bdy">
+            <div class="bdy-img"><img src ="Image.png"></div>
+            <div id = "phn_description" >
+                <div class =  "heading">Apple iPhone 11 (White, 128 GB)</div>
+                <div class = "rating">
+                    <img src = "Rating Pill.png">
+                    <span>1,81,870 Ratings & 10,713 Reviews </span>
+                </div>
+                <div class = "phn_txt">
+                    <ul>
+                        <li>128 GB ROM</li>
+                        <li>15.49 cm (6.1 inch) Super Retina XDR Display</li>
+                        <li>12MP + 12MP | 12MP Front Camera</li>
+                        <li>A15 Bionic Chip Processor</li>
+                        <li>Warranty for 1 Year</li>
+                    </ul>
+                </div>
+            </div>
+            <div class= "price justify-start">
+                <div id="price_head" style="font-weight:700; font-size:16px;">Rs. 44,999</div>
+                <div class = "txt_sml">
+                    <span style="font-size:12px">Rs. 44,999</span>
+                    <span style="font-size: 12px; color : #508C47;" >7% off</span>
+                </div>
+                <div style="font-size:12px">Free Delivery</div>
+                <div style="font-size:12px">Upto Rs. 20,000 off on Exchange</div>
+                <div style="font-size:12px; color:#508C47;">Bank Offers</div>
+                <div></div>
+            </div>
+        </div>
+        
+        <div id = "bdy">
+            <div class="bdy-img"><img src ="Image.png"></div>
+            <div id = "phn_description" >
+                <div class =  "heading">Apple iPhone 11 (White, 128 GB)</div>
+                <div class = "rating">
+                    <img src = "Rating Pill.png">
+                    <span>1,81,870 Ratings & 10,713 Reviews </span>
+                </div>
+                <div class = "phn_txt">
+                    <ul>
+                        <li>128 GB ROM</li>
+                        <li>15.49 cm (6.1 inch) Super Retina XDR Display</li>
+                        <li>12MP + 12MP | 12MP Front Camera</li>
+                        <li>A15 Bionic Chip Processor</li>
+                        <li>Warranty for 1 Year</li>
+                    </ul>
+                </div>
+            </div>
+            <div class= "price justify-start">
+                <div id="price_head" style="font-weight:700; font-size:16px;">Rs. 44,999</div>
+                <div class = "txt_sml">
+                    <span style="font-size:12px">Rs. 44,999</span>
+                    <span style="font-size: 12px; color : #508C47;" >7% off</span>
+                </div>
+                <div style="font-size:12px">Free Delivery</div>
+                <div style="font-size:12px">Upto Rs. 20,000 off on Exchange</div>
+                <div style="font-size:12px; color:#508C47;">Bank Offers</div>
+                <div></div>
+            </div>
+        </div>
+        <div id = "bdy">
+            <div class="bdy-img"><img src ="Image.png"></div>
+            <div id = "phn_description" >
+                <div class =  "heading">Apple iPhone 11 (White, 128 GB)</div>
+                <div class = "rating">
+                    <img src = "Rating Pill.png">
+                    <span>1,81,870 Ratings & 10,713 Reviews </span>
+                </div>
+                <div class = "phn_txt">
+                    <ul>
+                        <li>128 GB ROM</li>
+                        <li>15.49 cm (6.1 inch) Super Retina XDR Display</li>
+                        <li>12MP + 12MP | 12MP Front Camera</li>
+                        <li>A15 Bionic Chip Processor</li>
+                        <li>Warranty for 1 Year</li>
+                    </ul>
+                </div>
+            </div>
+            <div class= "price justify-start">
+                <div id="price_head" style="font-weight:700; font-size:16px;">Rs. 44,999</div>
+                <div class = "txt_sml">
+                    <span style="font-size:12px">Rs. 44,999</span>
+                    <span style="font-size: 12px; color : #508C47;" >7% off</span>
+                </div>
+                <div style="font-size:12px">Free Delivery</div>
+                <div style="font-size:12px">Upto Rs. 20,000 off on Exchange</div>
+                <div style="font-size:12px; color:#508C47;">Bank Offers</div>
+                <div></div>
+            </div>
+        </div>
+        <div id = "bdy">
+            <div class="bdy-img"><img src ="Image.png"></div>
+            <div id = "phn_description" >
+                <div class =  "heading">Apple iPhone 11 (White, 128 GB)</div>
+                <div class = "rating">
+                    <img src = "Rating Pill.png">
+                    <span>1,81,870 Ratings & 10,713 Reviews </span>
+                </div>
+                <div class = "phn_txt">
+                    <ul>
+                        <li>128 GB ROM</li>
+                        <li>15.49 cm (6.1 inch) Super Retina XDR Display</li>
+                        <li>12MP + 12MP | 12MP Front Camera</li>
+                        <li>A15 Bionic Chip Processor</li>
+                        <li>Warranty for 1 Year</li>
+                    </ul>
+                </div>
+            </div>
+            <div class= "price justify-start">
+                <div id="price_head" style="font-weight:700; font-size:16px;">Rs. 44,999</div>
+                <div class = "txt_sml">
+                    <span style="font-size:12px">Rs. 44,999</span>
+                    <span style="font-size: 12px; color : #508C47;" >7% off</span>
+                </div>
+                <div style="font-size:12px">Free Delivery</div>
+                <div style="font-size:12px">Upto Rs. 20,000 off on Exchange</div>
+                <div style="font-size:12px; color:#508C47;">Bank Offers</div>
+                <div></div>
+            </div>
+        </div>
+        <div id = "footer">
+            <div id = "about">
+                <div class = "about-sb">About</div>
+                <div id= "about" class = "about_content">Contact Us</div>
+                <!-- <p>Contact Us</p>
+                <p>Careers</p>
+                <p>Press</p>
+                <p>Flipkart Wholesale</p>
+                <p>Corporate Information</p>
+            </div> -->
+                
+                <div class = "about_content">Careers</div>
+                <div class = "about_content">Flipkart Stories</div>
+                <div class = "about_content">Press</div>
+                <div class = "about_content">Flipkart Wholesale</div>
+                <div class = "about_content">Corporate Information</div>
+            </div>
+
+            <div id ="about">
+                <div class = "about-sb">Help</div>
+                <div class = "about_content">Payments</div>
+                <div class = "about_content">Shipping</div>
+                <div class = "about_content">Cancellation & Returns</div>
+                <div class = "about_content">FAQ</div>
+                <div class = "about_content">Report Infringement</div>
+            </div>
+
+            <div id ="about">
+                <div class = "about-sb">Policy</div>
+                <div class = "about_content">Return Policy</div>
+                <div class = "about_content">Terms of Use</div>
+                <div class = "about_content">Security</div>
+                <div class = "about_content">Privacy</div>
+                <div class = "about_content">Sitemap</div>
+                <div class = "about_content">EPR Compliance</div>
+            </div>
+
+            <div id ="about">
+                <div class = "about-sb">Social</div>
+                <div class = "about_content">Facebook</div>
+                <div class = "about_content">Twitter</div>
+                <div class = "about_content">Youtube</div>
+            </div>
+            <div id = "about">
+                <div class = "line"></div>
+            </div>
+            <div id ="about">
+                <div class = "about-sb">Mail Us:</div>
+                <div class = "about_content">Flipkart Internet Private Limited,</div>
+                <div class = "about_content">Buildings Alyssa, Begonia & Clove </div>
+                <div class = "about_content">Embassy Tech Village, Outer Ring Road, </div>
+                <div class = "about_content">Devarabeesanhalli Village, Bengaluru,  </div>
+                <div class = "about_content">560103, Karnataka, India </div>
+            </div>
+
+            <div id ="about">
+                <div class = "about-sb">Registered Office Address:</div>
+                <div class = "about_content">Flipkart Internet Private Limited,</div>
+                <div class = "about_content">Buildings Alyssa, Begonia & Clove </div>
+                <div class = "about_content">Embassy Tech Village, Outer Ring Road, </div>
+                <div class = "about_content">Devarabeesanhalli Village, Bengaluru,  </div>
+                <div class = "about_content">560103, Karnataka, India </div>
+                <div class = "about_content">CIN : U51109KA2012PTC066107</div>
+                <div class = "about_content">Telephone: 044-45614700</div>
+            </div>
+        </div>
+    </body>
+</html>
